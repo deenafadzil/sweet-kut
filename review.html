@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>Review</title>
+        <link rel="stylesheet" href="css/reviewstyle.css">
+
+        <style> 
+        body { 
+            background-color: rgb(206, 175, 94) ;
+        }
+        </style>
+
+</head>
+<body>
+  <br>
+  <br>
+  <div style="text-align: center">
+    <h2>WhatsApp & Instagram Review</h2>
+    <br>
+    <h2 style="background-color: #F0E68C ;" >
+    <strong>~ Thank you for the continued trust you have put in our brand. ~ </strong>
+  <br>
+  <strong>~~ Our ongoing success relies on the loyalty and support of customers like you. ~~ </strong>
+<br>
+<strong>~~~ We look forward to an enjoyable business experience with you. ~~~</strong>
+</div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <br>
+    <br>
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="image/whatsapp1.jpg" style="width: 500px" height="500px">
+  <div class="text">WhatsApp review  1</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="image/whatsapp2.jpg" style="width: 500px" height="500px">
+  <div class="text">WhatsApp review 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="image/whatsapp3.jpg" style="width: 500px" height="500px">
+  <div class="text">WhatsApp review 3</div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 8</div>
+    <img src="image/whatsapp4.jpg" style="width: 500px" height="500px">
+    <div class="text">WhatsApp review 4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 8</div>
+    <img src="image/ig1.jpg" style="width: 500px" height="500px">
+    <div class="text">Instagram review 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 8</div>
+    <img src="image/ig2.jpg" style="width: 500px" height="500px">
+    <div class="text">Instagram review 2</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 8</div>
+    <img src="image/ig3.jpg" style="width: 500px" height="500px">
+    <div class="text">Instagram review 3</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 8</div>
+    <img src="image/ig4.jpg" style="width: 500px" height="500px">
+    <div class="text">Instagram review 4</div>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+</h2>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<br>
+<br>
+</body>
+  <footer>
+       c2022 | All Rights Reserved.
+  </footer>
+</html> 
